@@ -1,0 +1,136 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* start */
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000; /* Dark background color */
+  color: #ffffff; /* Light text color */
+  font-family: 'Arial', sans-serif; /* Example font, you can change this */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000; /* Dark header background */
+  border-bottom: 1px solid #333; /* Dark border */
+  width: 100%;
+  position: fixed; /* Make the header fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the header stays on top of other content */
+}
+
+/* Left section */
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ace-icon {
+  margin-right: 8px;
+  width: 30px; /* Adjust the width to make the icon slightly bigger */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+
+.left h1, .left p {
+  font-size: 16px; /* Smaller text size */
+  color: #ffffff; /* Light text color */
+}
+
+/* Middle section */
+.middle {
+  display: flex;
+  align-items: center;
+}
+
+.middle p {
+  font-size: 16px; /* Match the text size with other sections */
+  color: #ffffff; /* Light text color */
+}
+.location-icon {
+  margin-right: 1px;
+  width: 12px; /* Adjust the width to make the location icon the desired size */
+  height: auto; /* Maintain the aspect ratio */
+}
+/* Right section */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right a {
+  margin-left: 10px; /* Add spacing between links */
+  text-decoration: none; /* Remove underline from links */
+  color: #ffffff; /* Light text color */
+}
+
+.right a:hover {
+  color: #a0a0a0; /* Light hover color */
+}
+
+/* General adjustments */
+h1, p, a {
+  margin: 0;
+}
+
+.content {
+  padding-top: 70px; /* Adjust padding to prevent content from hiding under the fixed header */
+}
