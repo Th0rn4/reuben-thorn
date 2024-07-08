@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
-import './App.css';
-import Header from './components/Header';
+import React from 'react';
+import Navbar from './Navbar';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Header />
-      <div className="content">
-        {/* Add your other content here */}
+    <div>
+      <Navbar />
+      <div style={{ paddingTop: '60px' }}>
+        {/* Rest of your app content goes here */}
       </div>
-    </>
+    </div>
   );
 }
 

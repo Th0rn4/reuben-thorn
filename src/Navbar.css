@@ -1,0 +1,90 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  
+  .navbar-item {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .pin-icon {
+    width: 20px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 5px; /* Adjust margin as needed */
+  }
+  
+  .name {
+    display: flex;
+    align-items: center;
+  }
+  
+  .name img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .title-container {
+    display: flex;
+    flex-direction: column; /* Ensure items stack vertically */
+    align-items: flex-start; /* Align text to the left */
+  }
+  
+  .title-container div {
+    margin: 0; /* Ensure no extra margins */
+    padding: 0; /* Ensure no extra padding */
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    color: #aaa;
+  }
+  
+  .links {
+    margin-top: 5px; /* Adjust top margin as needed */
+  }
+  
+  .links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; /* Adjust horizontal margin to create spacing between links */
+  }
+  
+  .navbar-item:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .navbar-item:last-child {
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-item {
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  
+    .name, .subtitle {
+      text-align: center;
+    }
+  }
+  
