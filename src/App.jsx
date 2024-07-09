@@ -1,15 +1,17 @@
 import React from 'react';
 import Navbar from './Navbar';
+import About from './About';
+import Projects from './Projects';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <div className="App">
       <Navbar />
-      <div style={{ paddingTop: '60px' }}>
-        {/* Rest of your app content goes here */}
-      </div>
+      <About />
+      <Projects />
     </div>
   );
-}
+};
 
 export default App;
