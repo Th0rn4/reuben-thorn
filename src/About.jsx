@@ -7,14 +7,13 @@ const About = () => {
       <div className="about-section about-left">
         <h2>About</h2>
         <p>
-          Reuben developes software for programs. He thrives in complex,
-          ambiguous problem spaces focused around interactive media, digital
-          tooling, and multimodal interaction. He studied{" "}
-          <a href="#">Communication Design</a> and{" "}
-          <a href="#">Human-Computer Interaction</a> at Carnegie Mellon
-          University, an experience he holds fondly and will cherish for the
-          rest of his life. If you have an interesting idea, please{" "}
-          <a href="#">get in touch</a>.
+          Reuben develops software with a focus on interactive media and digital tooling. He is currently pursuing a Bachelor's degree in Information Technology at  <a href="https://www.nwu.ac.za">North-West University</a>.
+        </p>
+        <p>
+          An all-rounder with a passion for learning, Reuben loves to experiment with new technologies and is always up for a challenge.
+        </p>
+        <p>
+          If you have an interesting idea or would like to collaborate, please <a href="mailto:reuben.j.thorn@gmail.com">get in touch</a>.
         </p>
       </div>
       <div className="about-section about-center">
@@ -34,8 +33,7 @@ const About = () => {
         <p>
           2022-2024
           <br />
-          Completed Bachlors in Information Technology
-          <br />
+          Pursuing Bachelor's in Information Technology
           <br />
         </p>
       </div>

@@ -18,9 +18,9 @@ const Navbar = () => {
         <div>Jhb, South Africa</div>
       </div>
       <div className="links">
-        <a href="#" className="navbar-item">LinkedIn↗</a>
+        <a href="https://www.linkedin.com/in/reuben-thorn/" className="navbar-item">LinkedIn↗</a>
         <a href="#" className="navbar-item">Resume↗</a>
-        <a href="#" className="navbar-item">GitHub↗</a>
+        <a href="https://github.com/Th0rn4" className="navbar-item">GitHub↗</a>
       </div>
     </div>
   );

@@ -4,13 +4,19 @@ import './Projects.css';
 
 const projects = [
   {
-    title: 'Meta CodeHub',
+    title: 'File Organiser',
     description: 'A centralized platform designed to help engineers manage and access project documentation',
     link: 'https://example.com/meta-codehub',
     image: 'link-to-image-1' // Replace with actual image link
   },
   {
-    title: 'Mogic',
+    title: 'YouTube Focus',
+    description: 'A furniture-renting service for college students to design, assemble, and return sustainable furniture with minimal effort',
+    link: 'https://example.com/mogic',
+    image: 'link-to-image-2' // Replace with actual image link
+  },
+  {
+    title: 'Sending/group motivation thing',
     description: 'A furniture-renting service for college students to design, assemble, and return sustainable furniture with minimal effort',
     link: 'https://example.com/mogic',
     image: 'link-to-image-2' // Replace with actual image link
