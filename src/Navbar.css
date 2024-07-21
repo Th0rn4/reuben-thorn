@@ -7,9 +7,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black */
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Apply blur effect for Safari */
+    background-color: rgba(0, 0, 0, 0); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
     color: #fff;
     padding: 1rem 2rem;
     position: fixed;
@@ -24,7 +24,7 @@ body {
   .name {
     display: flex;
     align-items: center;
-    margin-left: 0rem; /* Adjust to move closer to the left edge */
+    margin-left: 0rem; 
   }
   
   .name img {
@@ -59,13 +59,13 @@ body {
   .location {
     display: flex;
     align-items: center;
-    margin-right: 2.5rem; /* Adjust to align correctly */
+    margin-right: 2.5rem; 
   }
   
   .links {
     display: flex;
     gap: 10px;
-    margin-right: 13rem; /* Adjust to move closer to the right edge */
+    margin-right: 13rem; 
   }
   
   .links a {

@@ -1,10 +1,10 @@
 .about {
     display: flex;
-    justify-content: space-between; /* Change to space-between to align to edges */
+    justify-content: space-between; 
     padding: 2rem;
-    margin-top: 100px; /* To ensure it's below the navbar */
+    margin-top: 100px; 
     color: #fff;
-    background-color: #000000;
+    background-color: #00000000;
     box-sizing: border-box;
   }
   
@@ -16,12 +16,12 @@
   
   .about-left {
     text-align: left;
-    margin-left: 0rem; /* Adjust to move closer to the left edge */
+    margin-left: 0rem; 
   }
   
   .about-right {
     text-align: left;
-    margin-right: 1rem; /* Adjust to move closer to the right edge */
+    margin-right: 1rem; 
   }
   
   .about-section h2 {
