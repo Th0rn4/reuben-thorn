@@ -1,6 +1,7 @@
 import React, { useRef, useState, useLayoutEffect } from 'react';
 import './Projects.css';
 import SMFiles from './assets/SMFiles.png';
+import workip from './assets/workinprogress.png';
 import VanillaTilt from 'vanilla-tilt';
 
 const projects = [
@@ -12,15 +13,15 @@ const projects = [
   },
   {
     title: 'YouTube Focus',
-    description: 'A furniture-renting service for college students to design, assemble, and return sustainable furniture with minimal effort',
+    description: 'Work in Progress',
     link: 'https://example.com/mogic',
-    image: 'link-to-image-2'
+    image: workip
   },
   {
     title: 'Sending/group motivation thing',
-    description: 'A furniture-renting service for college students to design, assemble, and return sustainable furniture with minimal effort',
+    description: 'Work in progress',
     link: 'https://example.com/mogic',
-    image: 'link-to-image-2'
+    image: workip
   }
 ];
 

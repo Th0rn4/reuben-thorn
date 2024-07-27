@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: transparent; /* Ensure it's transparent */
+  background-color: transparent; 
 }
 
 .project-card {
@@ -39,7 +39,7 @@
 .project-link {
   display: block;
   width: 100%;
-  text-decoration: none; /* Ensure the text does not change color on hover */
+  text-decoration: none; 
 }
 
 .project-image-container {
