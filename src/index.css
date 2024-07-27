@@ -1,15 +1,9 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  color: #fff;
+  color: #aba9a9;
+  background: transparent; /* Ensure no default background is set */
 }
-
-.App {
-  text-align: center;
-  position: relative; 
-  z-index: 1; 
-}
-
 
 body::before {
   content: "";
@@ -18,9 +12,21 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.396) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(255, 255, 255, 0.339) 1px, transparent 1px);
-  background-size: 100px 100px;
+  background-image: radial-gradient(circle, rgb(146, 142, 142) 1px, transparent 1px);
+  background-size: 75px 75px; /* Adjust the size to match grid spacing */
+  background-position: 0 0, 37.5px 37.5px; /* Ensure dots appear at the crossings */
   pointer-events: none;
-  z-index: -1; 
+  z-index: -1;
+}
+
+.App, .about, .projects {
+  position: relative;
+  z-index: 1; /* Ensure content is above the dots */
+}
+
+/* Ensure About section has a background that allows dots to show through */
+.about {
+  background: transparent; /* Ensure it is transparent to show dots behind */
+  position: relative;
+  z-index: 2;
 }

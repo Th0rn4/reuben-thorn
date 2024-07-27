@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: #00000000;
+  background-color: transparent; /* Ensure it's transparent */
 }
 
 .project-card {
@@ -39,6 +39,7 @@
 .project-link {
   display: block;
   width: 100%;
+  text-decoration: none; /* Ensure the text does not change color on hover */
 }
 
 .project-image-container {
@@ -46,24 +47,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.278);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+  backdrop-filter: blur(10px); /* Foggy blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Foggy blur effect for Safari */
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   will-change: backdrop-filter;
-  transform: translateZ(0); 
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 
-.project-card:hover .project-image-container {
+.project-image-container:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-  background: rgba(89, 164, 244, 0.297); 
+ background: rgba(89, 164, 244, 0.3); /* Change color on hover */
+ transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
 }
 
 .project-image {
-  width: 400px; 
-  height: 400px; 
+  width: 400px;
+  height: 400px;
   object-fit: contain;
 }
