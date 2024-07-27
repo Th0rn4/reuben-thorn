@@ -11,8 +11,9 @@
       crossorigin="anonymous"
     />
     <style>
-      body {
+      html, body {
         margin: 0;
+        height: 100%;
         font-family: 'Arial', sans-serif;
         background-color: #000000;
         color: #fff;
@@ -24,23 +25,22 @@
         z-index: 1;
       }
 
-      /* Add a bright white grid background effect */
-      body::before {
+      /* Add a dot grid background effect */
+      html::before {
         content: "";
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 1px, transparent 1px),
-                          linear-gradient(to bottom, rgba(255, 255, 255, 1) 1px, transparent 1px);
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 1px, transparent 1px);
         background-size: 75px 75px; /* Increase the size of the grid squares */
         pointer-events: none;
         z-index: -1;
       }
     </style>
-    <script type="module" crossorigin src="/reuben-thorn/assets/index-B9-jJPb2.js"></script>
-    <link rel="stylesheet" crossorigin href="/reuben-thorn/assets/index-DHPPxZkb.css">
+    <script type="module" crossorigin src="/reuben-thorn/assets/index-DWGOkhyM.js"></script>
+    <link rel="stylesheet" crossorigin href="/reuben-thorn/assets/index-fk-ZF8Dq.css">
   </head>
   <body>
     <div id="root"></div>
