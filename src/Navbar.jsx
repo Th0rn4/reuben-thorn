@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import './Navbar.css';
-import AceSpade from './assets/Ace_of_spades.png';
-import Pin from './assets/pin.png';
+import React, { useState, useEffect } from "react";
+import "./Navbar.css";
+import AceSpade from "./assets/Ace_of_spades.png";
+import Pin from "./assets/pin.png";
 
 const Navbar = () => {
   const [typing, setTyping] = useState(true);
@@ -9,7 +9,7 @@ const Navbar = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setTyping(false);
-    }, 4000); 
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -18,10 +18,8 @@ const Navbar = () => {
       <div className="name">
         <img src={AceSpade} alt="Ace of Spades" />
         <div className="title">
-          <div style={{ textAlign: 'center' }}>
-            <span className="typed-text">
-              Reuben Thorn
-            </span>
+          <div style={{ textAlign: "center" }}>
+            <span className="typed-text">Reuben Thorn</span>
           </div>
           <div className="subtitle">Software Developer</div>
         </div>
@@ -31,9 +29,21 @@ const Navbar = () => {
         <div>Jhb, South Africa</div>
       </div>
       <div className="links">
-        <a href="https://www.linkedin.com/in/reuben-thorn/" className="navbar-item">LinkedIn</a>
-        <a href="https://drive.google.com/file/d/1HahVheGg_DMwRe5HloX_l-LjN0qeoKDS/view?usp=sharing" className="navbar-item">Resume</a>
-        <a href="https://github.com/Th0rn4" className="navbar-item">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/reuben-thorn/"
+          className="navbar-item"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1HahVheGg_DMwRe5HloX_l-LjN0qeoKDS/view?usp=sharing"
+          className="navbar-item"
+        >
+          Resume
+        </a>
+        <a href="https://github.com/Th0rn4" className="navbar-item">
+          GitHub
+        </a>
       </div>
     </div>
   );

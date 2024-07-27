@@ -1,45 +1,45 @@
 .about {
-    display: flex;
-    justify-content: space-between; 
-    padding: 2rem;
-    margin-top: 100px; 
-    color: #fff;
-    background-color: #00000000;
-    box-sizing: border-box;
-  }
-  
-  .about-section {
-    flex: 1;
-    margin: 0 1rem;
-    text-align: left;
-  }
-  
-  .about-left {
-    text-align: left;
-    margin-left: 0rem; 
-  }
-  
-  .about-right {
-    text-align: left;
-    margin-right: 1rem; 
-  }
-  
-  .about-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about-section p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-  
-  .about-section a {
-    color: #bbb;
-    text-decoration: underline;
-  }
-  
-  .about-section a:hover {
-    color: #fff;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  margin-top: 100px;
+  color: #fff;
+  background-color: #00000000;
+  box-sizing: border-box;
+}
+
+.about-section {
+  flex: 1;
+  margin: 0 1rem;
+  text-align: left;
+}
+
+.about-left {
+  text-align: left;
+  margin-left: 0rem;
+}
+
+.about-right {
+  text-align: left;
+  margin-right: 1rem;
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.about-section a {
+  color: #bbb;
+  text-decoration: underline;
+}
+
+.about-section a:hover {
+  color: #fff;
+}
