@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Arial", sans-serif;
   color: #aba9a9;
-  background: transparent; /* Ensure no default background is set */
+  background: transparent;
 }
 
 body::before {
@@ -17,8 +17,8 @@ body::before {
     rgb(146, 142, 142) 1px,
     transparent 1px
   );
-  background-size: 75px 75px; /* Adjust the size to match grid spacing */
-  background-position: 0 0, 37.5px 37.5px; /* Ensure dots appear at the crossings */
+  background-size: 75px 75px;
+  background-position: 0 0, 37.5px 37.5px;
   pointer-events: none;
   z-index: -1;
 }
@@ -27,12 +27,12 @@ body::before {
 .about,
 .projects {
   position: relative;
-  z-index: 1; /* Ensure content is above the dots */
+  z-index: 1;
 }
 
 /* Ensure About section has a background that allows dots to show through */
 .about {
-  background: transparent; /* Ensure it is transparent to show dots behind */
+  background: transparent;
   position: relative;
   z-index: 2;
 }

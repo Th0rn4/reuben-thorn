@@ -19,6 +19,11 @@ body {
   width: 100%;
   z-index: 1000;
   box-sizing: border-box;
+  transition: top 0.3s;
+}
+
+.navbar.hidden {
+  top: -100px;
 }
 
 .name {
@@ -65,7 +70,7 @@ body {
 .links {
   display: flex;
   gap: 10px;
-  margin-right: 13rem;
+  margin-right: 12rem;
 }
 
 .links a {
@@ -134,7 +139,7 @@ body {
 
   .links {
     margin-right: 0;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
   }
 

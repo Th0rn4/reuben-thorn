@@ -5,6 +5,8 @@ import Pin from "./assets/pin.png";
 
 const Navbar = () => {
   const [typing, setTyping] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [navbarHidden, setNavbarHidden] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -13,8 +15,26 @@ const Navbar = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        // Scroll down
+        setNavbarHidden(true);
+      } else {
+        // Scroll up
+        setNavbarHidden(false);
+      }
+      setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop); // For Mobile or negative scrolling
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollTop]);
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${navbarHidden ? "hidden" : ""}`}>
       <div className="name">
         <img src={AceSpade} alt="Ace of Spades" />
         <div className="title">
