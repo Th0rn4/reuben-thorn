@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  margin-top: 100px;
+  margin-top: 100px; /* This can be adjusted if needed */
   color: #fff;
   background-color: #00000000;
   box-sizing: border-box;
@@ -41,17 +41,32 @@
 }
 
 .about-section a:hover {
-  color: #007bff; /* Turn blue on hover */
+  color: #007bff;
 }
 
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
+    margin-top: 250px; /* Increased margin to avoid overlap */
   }
 
   .about-section {
     margin: 1rem 0;
     text-align: center;
+  }
+
+  .about-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-section p {
+    font-size: 0.9rem;
+  }
+
+  .about-left,
+  .about-right {
+    margin: 0;
   }
 }

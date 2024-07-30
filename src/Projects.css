@@ -72,8 +72,24 @@
 }
 
 @media (max-width: 768px) {
+  .projects {
+    padding: 1rem;
+  }
+
   .project-card {
-    width: 100%;
+    width: 80%;
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  .project-image-container {
+    padding: 0.2rem;
   }
 
   .project-image {
