@@ -41,5 +41,17 @@
 }
 
 .about-section a:hover {
-  color: #fff;
+  color: #007bff; /* Turn blue on hover */
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section {
+    margin: 1rem 0;
+    text-align: center;
+  }
 }

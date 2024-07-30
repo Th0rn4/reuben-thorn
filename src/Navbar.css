@@ -73,25 +73,6 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .name,
-  .location,
-  .links {
-    text-align: center;
-    padding: 0.5rem 0;
-  }
-}
-
-.links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
 .links a:hover {
   color: #007bff;
 }
@@ -135,5 +116,22 @@ body {
   }
   to {
     width: 12ch;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .name,
+  .location,
+  .links {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .links {
+    margin-right: 0;
   }
 }
