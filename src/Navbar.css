@@ -23,7 +23,7 @@ body {
 }
 
 .navbar.hidden {
-  top: -100px;
+  top: -150px;
 }
 
 .name {
@@ -64,7 +64,7 @@ body {
 .location {
   display: flex;
   align-items: center;
-  margin-right: 2.5rem;
+  margin-right: 50px;
 }
 
 .links {
@@ -130,11 +130,18 @@ body {
     padding: 0.5rem;
   }
 
-  .name,
-  .location,
+  .name {
+    margin-right: 20rem;
+    padding: 2rem 0;
+  }
+
+  .location {
+    margin-top: -70px;
+    margin-left: 15rem;
+  }
   .links {
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 2rem 0;
   }
 
   .links {

@@ -22,7 +22,7 @@ const About = () => {
         </p>
       </div>
       <div className="about-section about-center">
-        <h2>Skills</h2>
+        <h2> Skills</h2>
         <p>
           Dart/Flutter
           <br />
