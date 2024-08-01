@@ -20,13 +20,11 @@ const Navbar = () => {
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop) {
-        // Scroll down
         setNavbarHidden(true);
       } else {
-        // Scroll up
         setNavbarHidden(false);
       }
-      setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop); // For Mobile or negative scrolling
+      setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop);
     };
 
     window.addEventListener("scroll", handleScroll);

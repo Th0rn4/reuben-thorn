@@ -1,22 +1,44 @@
+@media only screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+  .about-image {
+    display: none;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .about-section {
+    margin-bottom: 1rem;
+  }
+  .about-right {
+    flex-direction: column;
+  }
+  .skills-section,
+  .story-section {
+    margin: 0;
+  }
+}
+
 .about {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   margin-top: 100px;
   color: #000;
-  padding: 0; /* Remove padding to avoid gaps */
+  padding: 0;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-image {
   flex: 1;
-  max-width: 30%; /* Image on the left */
+  max-width: 30%;
 }
 
 .about-image img {
   width: 100%;
-  height: 100%; /* Ensure the image covers the entire height */
+  height: 100%;
   object-fit: cover;
 }
 
@@ -32,23 +54,23 @@
   padding: 20px;
   box-sizing: border-box;
   color: #fff;
-  font-family: Arial, sans-serif; /* Normal font for regular text */
+  font-family: Arial, sans-serif;
 }
 
 .about-center {
-  background-color: #007bff; /* Blue background in the center */
+  background-color: #007bff;
 }
 
 .about-center h2 {
-  font-family: "Garamond Premier Pro Semibold Caption", serif; /* Special font for headers */
+  font-family: "Garamond Premier Pro Semibold Caption", serif;
 }
 
 .about-center p {
-  font-family: Arial, sans-serif; /* Ensure normal font for paragraphs */
+  font-family: Arial, sans-serif;
 }
 
 .about-right {
-  background-color: #000; /* Black background on the right */
+  background-color: #000;
   display: flex;
   justify-content: space-between;
 }
@@ -56,19 +78,20 @@
 .skills-section,
 .story-section {
   flex: 1;
-  margin: 0 10px; /* Add some space between the sections */
+  margin: 0 10px;
 }
 
 .skills-section h2,
 .story-section h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  font-family: "Garamond Premier Pro Semibold Caption", serif; /* Special font for headers */
+  font-family: "Garamond Premier Pro Semibold Caption", serif;
 }
 
-.skills-section p .story-section p {
+.skills-section p,
+.story-section p {
   font-size: 1.2rem;
-  font-family: Arial, sans-serif; /* Normal font for regular text */
+  font-family: Arial, sans-serif;
 }
 
 .resume-button {
@@ -90,11 +113,11 @@
 }
 
 .about-section a {
-  color: #000; /* Set link color to black */
-  text-decoration: none; /* Remove underline */
+  color: #000;
+  text-decoration: none;
 }
 
 .about-section a:hover {
-  color: #ffffff; /* Set hover color to white */
-  text-decoration: underline; /* Add underline on hover */
+  color: #ffffff;
+  text-decoration: underline;
 }

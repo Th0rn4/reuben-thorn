@@ -29,10 +29,3 @@ body::before {
   position: relative;
   z-index: 1;
 }
-
-/* Ensure About section has a background that allows dots to show through */
-.about {
-  background: transparent;
-  position: relative;
-  z-index: 2;
-}
