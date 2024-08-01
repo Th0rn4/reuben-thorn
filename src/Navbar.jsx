@@ -56,7 +56,7 @@ const Navbar = () => {
           LinkedIn
         </a>
         <a
-          href="https://drive.google.com/file/d/1HahVheGg_DMwRe5HloX_l-LjN0qeoKDS/view?usp=sharing"
+          href="https://drive.google.com/file/d/1x0hQBHBXQfeeXulO7jF3rY9fCYxgG3Ay/view?usp=sharing"
           className="navbar-item"
         >
           Resume
